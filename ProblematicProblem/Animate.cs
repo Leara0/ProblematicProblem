@@ -8,11 +8,11 @@ public class Animate
 {
     public static void WaitTime()
     {
-        Text.Print("Connecting to the database");
+        Text.Print("Connecting to the database.");
         Animation();
 
         Console.WriteLine("\n");
-        Text.Print("Choosing your random activity");
+        Text.Print("Choosing your random activity.");
         Animation();
         Console.WriteLine("\n");
         Thread.Sleep(400);

@@ -63,17 +63,15 @@ namespace ProblematicProblem
                 }
             }
 
-
-            do // while cont was original
+            do 
             {
                 Console.WriteLine();
                 Animate.WaitTime();
-
-
+                
                 int randomNumber = rng.Next(activities.Count);
                 string randomActivity = activities[randomNumber];
 
-                Text.Print($"Ah got it! {userName}, your random activity is: {randomActivity}!");
+                Text.Print($"Ah, got it! {userName}, your random activity is: {randomActivity}!");
                 Console.WriteLine();
                 Thread.Sleep(2000);
 
@@ -93,7 +91,7 @@ namespace ProblematicProblem
                 Text.Print(
                     $"Is this ok or do you want to grab another activity?");
                 Text.Print(
-                    "Please type 'yes' to do this activity and 'no' to generate a new random activity suggestion.");
+                    "Please type 'yes' to do this activity or 'no' to generate a new random activity suggestion.");
                 answer = UserInput.GetUserInputYN();
                 if (answer == "no")
                     activities.Remove(randomActivity);
